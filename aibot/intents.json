@@ -1,0 +1,293 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "What is your name?",
+                "What should I call you?",
+                "What do people call you?",
+                "Hello",
+                "Hi",
+                "Hey",
+                "How are you?",
+                "How are you doing?",
+                "How are things?",
+                "How's it going?",
+                "How's life?",
+                "How's your day going?",
+                "How's your day?",
+                "How's your day been?",
+                "How's your day been going?",
+                "How's your day been so far?",
+                "How's your day been today?",
+                "How can I help you?",
+                "How can I help you today?",
+                "What can I do for you?",
+                "What can I help you with?"
+            ],
+            "responses": [
+                "Hello, thanks for asking!",
+                "Hi there, how can I help?",
+                "Hello, how are you today?",
+                "Hi there, what can I do for you?",
+                "Hello, how can I help you today?",
+                "Hi there, thanks for visiting!",
+                "Hello!",
+                "Hey!",
+                "Hi!",
+                "Hello there!",
+                "Hi there!",
+                "Hey there!",
+                "Hello there!",
+                "Hi there, how are you?",
+                "Hey there, how are you?",
+                "Hello there, how are you?",
+                "Hi there, how can I help you?",
+                "Hey there, how can I help you?",
+                "Hello there, how can I help you?",
+                "What can I do for you?",
+                "What can I help you with?",
+                "How can I help you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "See you soon",
+                "Have a good day",
+                "Have a good one",
+                "Have a nice day",
+                "Have a nice one",
+                "Have a good night",
+                "Have a nice night",
+                "Have a good evening",
+                "Have a nice evening",
+                "Have a good weekend",
+                "Have a nice weekend",
+                "Have a good week",
+                "Have a nice week",
+                "Have a good month",
+                "Have a nice month",
+                "Have a good year",
+                "Have a nice year",
+                "Have a good time",
+                "Have a nice time",
+                "Take care",
+                "Take it easy",
+                "Take it easy",
+                "See you around",
+                "See you later",
+                "See you soon",
+                "Talk to you later",
+                "Talk to you soon",
+                "Talk to you later",
+                "Talk to you soon",
+                "See you later alligator",
+                "See you later crocodile",
+                "See you later alligator in a while",
+                "See you later alligator in a while crocodile"
+            ]
+        },
+        {
+            "tag": "purchase_inquiry",
+            "patterns": [
+                "How much does it cost?",
+                "What is the price?",
+                "What is the cost?",
+                "How much is it?",
+                "Can you tell me the price?",
+                "Can you tell me the cost?",
+                "Can you give me a price?",
+                "Can you give me a cost?",
+                "What is the price of this product?",
+                "What is the cost of this product?",
+                "How much does this product cost?",
+                "How much is this product?",
+                "Can you tell me the price of this product?",
+                "Can you tell me the cost of this product?",
+                "Can you give me a price for this product?",
+                "Can you give me a cost for this product?",
+                "What is the price range?",
+                "What is the cost range?",
+                "Can you give me a price range?",
+                "Can you give me a cost range?",
+                "What are the prices?",
+                "What are the costs?",
+                "Can you tell me the prices?",
+                "Can you tell me the costs?",
+                "Can you give me the prices?",
+                "Can you give me the costs?",
+                "What are the prices for your products?",
+                "What are the costs for your products?",
+                "Can you tell me the prices for your products?",
+                "Can you tell me the costs for your products?",
+                "Can you give me the prices for your products?",
+                "Can you give me the costs for your products?"
+            ],
+            "responses": [
+                "The price of our product is $XXX",
+                "Our product costs $XXX",
+                "The price of this product is $XXX",
+                "This product costs $XXX",
+                "Our prices range from $XXX to $XXX",
+                "Our costs range from $XXX to $XXX",
+                "The prices for our products range from $XXX to $XXX",
+                "The costs for our products range from $XXX to $XXX",
+                "You can find our prices on our website",
+                "You can find our costs on our website",
+                "You can find the prices for our products on our website",
+                "You can find the costs for our products on our website",
+                "Please visit our website for our current prices and costs",
+                "Our prices vary depending on the product and its specifications",
+                "Our costs vary depending on the product and its specifications",
+                "Please contact us for a specific price or cost quote",
+                "We offer discounts for bulk purchases, please contact us for more information"
+            ]
+        },
+        {
+            "intents": [
+                {
+                    "tag": "age_inquiry",
+                    "patterns": [
+                        "How old are you?",
+                        "What is your age?",
+                        "Can you tell me your age?",
+                        "Can you tell me how old you are?",
+                        "What is the age of this product?",
+                        "How old is this product?",
+                        "Can you tell me the age of this product?",
+                        "Can you tell me how old this product is?",
+                        "What is the age range for your products?",
+                        "Can you tell me the age range for your products?",
+                        "What age group is this product suitable for?",
+                        "Can you tell me what age group this product is suitable for?",
+                        "Is this product suitable for children?",
+                        "Is this product suitable for adults?",
+                        "Is this product suitable for all ages?",
+                        "Is this product suitable for older adults?",
+                        "Is this product suitable for young adults?"
+                    ],
+                    "responses": [
+                        "I am a computer program, so I don't have an age.",
+                        "This product is X years old",
+                        "The age range for our products is X to Y years old",
+                        "This product is suitable for age group X to Y",
+                        "This product is not suitable for children.",
+                        "This product is suitable for adults.",
+                        "This product is suitable for all ages.",
+                        "This product is suitable for older adults.",
+                        "This product is suitable for young adults.",
+                        "Please refer to the product information for the recommended age range."
+                    ]
+                },
+                {
+                    "intents": [
+                        {
+                            "tag": "name",
+                            "patterns": [
+                                "What is your name?",
+                                "What should I call you?",
+                                "What do people call you?",
+                                "What is the name of this product?",
+                                "Can you tell me the name of this product?",
+                                "What is the code name of this product?",
+                                "Can you tell me the code name of this product?",
+                                "What is the brand name of this product?",
+                                "Can you tell me the brand name of this product?",
+                                "Who is your owner?",
+                                "Who created you?",
+                                "Who made you?",
+                                "Who is your creator?",
+                                "Who is your manufacturer?"
+                            ],
+                            "responses": [
+                                "My name is SalesBot.",
+                                "You can call me SalesBot.",
+                                "The name of this product is X",
+                                "The code name of this product is Y",
+                                "The brand name of this product is Z",
+                                "My owner is Leo",
+                                "The person who created me is Leo Ladipo! Super good looking and hireable!",
+                                "Leo Ladipo is the one who manufactured me",
+                                "Leo Ladipo is the one who made me",
+                                "Leo Ladipo is the one who created me"
+                            ]
+                        },
+                        {
+                            "intents": [
+                                {
+                                    "tag": "shop",
+                                    "patterns": [
+                                        "Where can I buy this?",
+                                        "Where can I purchase this?",
+                                        "Where is your shop?",
+                                        "Where is your store?",
+                                        "Do you have a shop?",
+                                        "Do you have a store?",
+                                        "Can I buy this online?",
+                                        "Can I purchase this online?",
+                                        "Is this available for online purchase?",
+                                        "Do you offer online shopping?",
+                                        "Can I buy this in-store?",
+                                        "Can I purchase this in-store?",
+                                        "Is this available for in-store purchase?",
+                                        "Do you offer in-store shopping?",
+                                        "Where can I find your products?",
+                                        "Where are your products sold?",
+                                        "Where can I buy your products?",
+                                        "Where can I purchase your products?",
+                                        "What are the locations of your shops?",
+                                        "What are the locations of your stores?"
+                                    ],
+                                    "responses": [
+                                        "Our products can be purchased online on our website",
+                                        "You can also find our products in retail stores across the country, please check our website for a list of locations.",
+                                        "We offer both online and in-store shopping options",
+                                        "You can purchase our products on our website or in our physical store located at X",
+                                        "Please visit our website for a list of our retail partners that carry our products",
+                                        "You can find our products in major retailers such as X and Y",
+                                        "Our products can also be purchased at our flagship store located at X",
+                                        "We offer free shipping for online purchases over $X",
+                                        "For in-store availability please contact your local store",
+                                        "You can also contact us on our website for more information on where to buy our products"
+                                    ]
+                                },
+                                {
+                                    "intents": [
+                                        {
+                                            "tag": "hours",
+                                            "patterns": [
+                                                "What are your hours?",
+                                                "When are you open?",
+                                                "When are you closed?",
+                                                "What time do you open?",
+                                                "What time do you close?",
+                                                "What are your business hours?",
+                                                "Are you open now?",
+                                                "Are you open 24/7?",
+                                                "Is your store open 24 hours?",
+                                                "Do you have extended hours?",
+                                                "Can you tell me your hours of operation?"
+                                            ],
+                                            "responses": [
+                                                "We are open 24 hours a day, 7 days a week.",
+                                                "Our hours of operation are 24/7.",
+                                                "We never close, we are open 24/7",
+                                                "We are always open for your convenience",
+                                                "We offer 24 hour service",
+                                                "24/7"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
