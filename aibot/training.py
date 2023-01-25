@@ -4,15 +4,16 @@ import pickle
 import json
 import nltk
 from nltk.stem import WordNetLemmatizer
+import tensorflow as tf
 # intents = json.loads(open('intents.json').read())
 # print(intents)
 
 # nltk.download('punkt')
 # nltk.download('wordnet')
 
-# from tensorflow.keras.models import Sequential
-# from tensorflow.keras.layers import Dense, Activation, Dropout
-# from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Activation, Dropout
+from tensorflow.keras.optimizers import SGD
 
 lemmatizer = WordNetLemmatizer()
 
@@ -56,7 +57,10 @@ for document in documents:
     training.append([bag, output_row])
 
 random.shuffle(training)
-training = np.array(training)
+training = np.array(training, dtype=object)  # convert to numpy array
+# print('training', training)
+print('training shape', training.shape)
+
 
 train_x = list(training[:, 0])
 train_y = list(training[:, 1])
@@ -68,9 +72,12 @@ model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(len(train_y[0]), activation='softmax'))
 
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+# sgd = tf.keras.optimizers.SGD(lr=0.01, momentum=0.9, nesterov=True)
+optimizer = tf.keras.optimizers.Adam()
+
+
 model.compile(loss='categorical_crossentropy',
-              optimizer=sgd, metrics=['accuracy'])
+              optimizer=optimizer, metrics=['accuracy'])
 
 model.fit(np.array(train_x), np.array(train_y),
           epochs=200, batch_size=5, verbose=1)
