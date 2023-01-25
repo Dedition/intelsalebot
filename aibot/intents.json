@@ -148,145 +148,129 @@
             ]
         },
         {
-            "intents": [
-                {
-                    "tag": "age_inquiry",
-                    "patterns": [
-                        "How old are you?",
-                        "What is your age?",
-                        "Can you tell me your age?",
-                        "Can you tell me how old you are?",
-                        "What is the age of this product?",
-                        "How old is this product?",
-                        "Can you tell me the age of this product?",
-                        "Can you tell me how old this product is?",
-                        "What is the age range for your products?",
-                        "Can you tell me the age range for your products?",
-                        "What age group is this product suitable for?",
-                        "Can you tell me what age group this product is suitable for?",
-                        "Is this product suitable for children?",
-                        "Is this product suitable for adults?",
-                        "Is this product suitable for all ages?",
-                        "Is this product suitable for older adults?",
-                        "Is this product suitable for young adults?"
-                    ],
-                    "responses": [
-                        "I am a computer program, so I don't have an age.",
-                        "This product is X years old",
-                        "The age range for our products is X to Y years old",
-                        "This product is suitable for age group X to Y",
-                        "This product is not suitable for children.",
-                        "This product is suitable for adults.",
-                        "This product is suitable for all ages.",
-                        "This product is suitable for older adults.",
-                        "This product is suitable for young adults.",
-                        "Please refer to the product information for the recommended age range."
-                    ]
-                },
-                {
-                    "intents": [
-                        {
-                            "tag": "name",
-                            "patterns": [
-                                "What is your name?",
-                                "What should I call you?",
-                                "What do people call you?",
-                                "What is the name of this product?",
-                                "Can you tell me the name of this product?",
-                                "What is the code name of this product?",
-                                "Can you tell me the code name of this product?",
-                                "What is the brand name of this product?",
-                                "Can you tell me the brand name of this product?",
-                                "Who is your owner?",
-                                "Who created you?",
-                                "Who made you?",
-                                "Who is your creator?",
-                                "Who is your manufacturer?"
-                            ],
-                            "responses": [
-                                "My name is SalesBot.",
-                                "You can call me SalesBot.",
-                                "The name of this product is X",
-                                "The code name of this product is Y",
-                                "The brand name of this product is Z",
-                                "My owner is Leo",
-                                "The person who created me is Leo Ladipo! Super good looking and hireable!",
-                                "Leo Ladipo is the one who manufactured me",
-                                "Leo Ladipo is the one who made me",
-                                "Leo Ladipo is the one who created me"
-                            ]
-                        },
-                        {
-                            "intents": [
-                                {
-                                    "tag": "shop",
-                                    "patterns": [
-                                        "Where can I buy this?",
-                                        "Where can I purchase this?",
-                                        "Where is your shop?",
-                                        "Where is your store?",
-                                        "Do you have a shop?",
-                                        "Do you have a store?",
-                                        "Can I buy this online?",
-                                        "Can I purchase this online?",
-                                        "Is this available for online purchase?",
-                                        "Do you offer online shopping?",
-                                        "Can I buy this in-store?",
-                                        "Can I purchase this in-store?",
-                                        "Is this available for in-store purchase?",
-                                        "Do you offer in-store shopping?",
-                                        "Where can I find your products?",
-                                        "Where are your products sold?",
-                                        "Where can I buy your products?",
-                                        "Where can I purchase your products?",
-                                        "What are the locations of your shops?",
-                                        "What are the locations of your stores?"
-                                    ],
-                                    "responses": [
-                                        "Our products can be purchased online on our website",
-                                        "You can also find our products in retail stores across the country, please check our website for a list of locations.",
-                                        "We offer both online and in-store shopping options",
-                                        "You can purchase our products on our website or in our physical store located at X",
-                                        "Please visit our website for a list of our retail partners that carry our products",
-                                        "You can find our products in major retailers such as X and Y",
-                                        "Our products can also be purchased at our flagship store located at X",
-                                        "We offer free shipping for online purchases over $X",
-                                        "For in-store availability please contact your local store",
-                                        "You can also contact us on our website for more information on where to buy our products"
-                                    ]
-                                },
-                                {
-                                    "intents": [
-                                        {
-                                            "tag": "hours",
-                                            "patterns": [
-                                                "What are your hours?",
-                                                "When are you open?",
-                                                "When are you closed?",
-                                                "What time do you open?",
-                                                "What time do you close?",
-                                                "What are your business hours?",
-                                                "Are you open now?",
-                                                "Are you open 24/7?",
-                                                "Is your store open 24 hours?",
-                                                "Do you have extended hours?",
-                                                "Can you tell me your hours of operation?"
-                                            ],
-                                            "responses": [
-                                                "We are open 24 hours a day, 7 days a week.",
-                                                "Our hours of operation are 24/7.",
-                                                "We never close, we are open 24/7",
-                                                "We are always open for your convenience",
-                                                "We offer 24 hour service",
-                                                "24/7"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
+            "tag": "age_inquiry",
+            "patterns": [
+                "How old are you?",
+                "What is your age?",
+                "Can you tell me your age?",
+                "Can you tell me how old you are?",
+                "What is the age of this product?",
+                "How old is this product?",
+                "Can you tell me the age of this product?",
+                "Can you tell me how old this product is?",
+                "What is the age range for your products?",
+                "Can you tell me the age range for your products?",
+                "What age group is this product suitable for?",
+                "Can you tell me what age group this product is suitable for?",
+                "Is this product suitable for children?",
+                "Is this product suitable for adults?",
+                "Is this product suitable for all ages?",
+                "Is this product suitable for older adults?",
+                "Is this product suitable for young adults?"
+            ],
+            "responses": [
+                "I am a computer program, so I don't have an age.",
+                "This product is X years old",
+                "The age range for our products is X to Y years old",
+                "This product is suitable for age group X to Y",
+                "This product is not suitable for children.",
+                "This product is suitable for adults.",
+                "This product is suitable for all ages.",
+                "This product is suitable for older adults.",
+                "This product is suitable for young adults.",
+                "Please refer to the product information for the recommended age range."
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "What is your name?",
+                "What should I call you?",
+                "What do people call you?",
+                "What is the name of this product?",
+                "Can you tell me the name of this product?",
+                "What is the code name of this product?",
+                "Can you tell me the code name of this product?",
+                "What is the brand name of this product?",
+                "Can you tell me the brand name of this product?",
+                "Who is your owner?",
+                "Who created you?",
+                "Who made you?",
+                "Who is your creator?",
+                "Who is your manufacturer?"
+            ],
+            "responses": [
+                "My name is SalesBot.",
+                "You can call me SalesBot.",
+                "The name of this product is X",
+                "The code name of this product is Y",
+                "The brand name of this product is Z",
+                "My owner is Leo",
+                "The person who created me is Leo Ladipo! Super good looking and hireable!",
+                "Leo Ladipo is the one who manufactured me",
+                "Leo Ladipo is the one who made me",
+                "Leo Ladipo is the one who created me"
+            ]
+        },
+        {
+            "tag": "shop",
+            "patterns": [
+                "Where can I buy this?",
+                "Where can I purchase this?",
+                "Where is your shop?",
+                "Where is your store?",
+                "Do you have a shop?",
+                "Do you have a store?",
+                "Can I buy this online?",
+                "Can I purchase this online?",
+                "Is this available for online purchase?",
+                "Do you offer online shopping?",
+                "Can I buy this in-store?",
+                "Can I purchase this in-store?",
+                "Is this available for in-store purchase?",
+                "Do you offer in-store shopping?",
+                "Where can I find your products?",
+                "Where are your products sold?",
+                "Where can I buy your products?",
+                "Where can I purchase your products?",
+                "What are the locations of your shops?",
+                "What are the locations of your stores?"
+            ],
+            "responses": [
+                "Our products can be purchased online on our website",
+                "You can also find our products in retail stores across the country, please check our website for a list of locations.",
+                "We offer both online and in-store shopping options",
+                "You can purchase our products on our website or in our physical store located at X",
+                "Please visit our website for a list of our retail partners that carry our products",
+                "You can find our products in major retailers such as X and Y",
+                "Our products can also be purchased at our flagship store located at X",
+                "We offer free shipping for online purchases over $X",
+                "For in-store availability please contact your local store",
+                "You can also contact us on our website for more information on where to buy our products"
+            ]
+        },
+        {
+            "tag": "hours",
+            "patterns": [
+                "What are your hours?",
+                "When are you open?",
+                "When are you closed?",
+                "What time do you open?",
+                "What time do you close?",
+                "What are your business hours?",
+                "Are you open now?",
+                "Are you open 24/7?",
+                "Is your store open 24 hours?",
+                "Do you have extended hours?",
+                "Can you tell me your hours of operation?"
+            ],
+            "responses": [
+                "We are open 24 hours a day, 7 days a week.",
+                "Our hours of operation are 24/7.",
+                "We never close, we are open 24/7",
+                "We are always open for your convenience",
+                "We offer 24 hour service",
+                "24/7"
             ]
         }
     ]
