@@ -26,3 +26,17 @@ def clean_up_sentence(sentence):
     sentence_words = [lemmatizer.lemmatize(word)
                       for word in sentence_words]
     return sentence_words
+
+
+def bag_of_words(sentence):
+    '''
+    Tokenize the sentence and create bag of words - a list of words
+    contained in the sentence, 1 if word is found, otherwise 0
+    '''
+    sentence_words = clean_up_sentence(sentence)
+    bag = [0] * len(words)
+    for s in sentence_words:
+        for i, word in enumerate(words):
+            if word == s:
+                bag[i] = 1
+    return np.array(bag)
