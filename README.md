@@ -47,14 +47,21 @@ python chatbot.py
 
 The chatbot should now be running and ready to assist customers with their purchase inquiries.
 
-Built With
-[Python](https://www.python.org/) - The programming language used
-[nltk](https://www.nltk.org/) - Natural Language Toolkit library
-[tensorflow](https://www.tensorflow.org/) - Machine learning library
-[keras](https://keras.io/) - High-level neural networks API
-[numpy](https://numpy.org/) - Scientific computing library
-[json](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) - JSON library
-[pickle](https://docs.python.org/3/library/pickle.html) - Pickling library
+## Built With
+
+• [Python](https://www.python.org/) - The programming language used
+
+• [nltk](https://www.nltk.org/) - Natural Language Toolkit library
+
+• [tensorflow](https://www.tensorflow.org/) - Machine learning library
+
+• [keras](https://keras.io/) - High-level neural networks API
+
+• [numpy](https://numpy.org/) - Scientific computing library
+
+• [json](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) - JSON library
+
+• [pickle](https://docs.python.org/3/library/pickle.html) - Pickling library
 
 ## Authors
 
