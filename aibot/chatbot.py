@@ -55,3 +55,25 @@ def predict_class(sentence):
     for r in results:
         return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
     return return_list
+
+
+def get_response(ints, intents_json):
+    '''
+    Get a random response from the intents JSON file
+    '''
+    tag = ints[0]['intent']
+    list_of_intents = intents_json['intents']
+    for i in list_of_intents:
+        if i['tag'] == tag:
+            result = random.choice(i['responses'])
+            break
+    return result
+
+
+print('Bot is running!!! Go ahead and ask me something')
+
+while True:
+    message = input('')
+    ints = predict_class(message)
+    res = get_response(ints, intents)
+    print(res)
