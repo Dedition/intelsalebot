@@ -64,9 +64,12 @@ def get_response(ints, intents_json):
     tag = ints[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
+        # print('i', i)
         if i['tag'] == tag:
             result = random.choice(i['responses'])
             break
+        else:
+            result = "I don't understand..."
     return result
 
 
@@ -75,5 +78,6 @@ print('Bot is running!!! Go ahead and ask me something')
 while True:
     message = input('')
     ints = predict_class(message)
+    # print('ints', ints)
     res = get_response(ints, intents)
     print(res)
