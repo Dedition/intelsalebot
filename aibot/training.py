@@ -59,7 +59,7 @@ for document in documents:
 random.shuffle(training)
 training = np.array(training, dtype=object)  # convert to numpy array
 # print('training', training)
-print('training shape', training.shape)
+# print('training shape', training.shape)
 
 
 train_x = list(training[:, 0])
